@@ -19,7 +19,7 @@ function App() {
 
   const { loading, data } = useHttpData<Category>(url);
   const { loading: loadingMeal, data: dataMeal } = useHttpData<Meal>(
-    makeMealUrl(defaultCategory)
+    makeMealUrl(defaultCategory)   
   );
 
   return (
